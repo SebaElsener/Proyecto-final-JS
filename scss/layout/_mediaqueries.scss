@@ -40,6 +40,16 @@
                 }
             }
         }
+        #productosServicios{
+            .cardsContainer{
+                grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
+                width: 1000px;
+                .imgCard{
+                    width: 220px;
+                    height: 260px;
+                }
+            }
+        }
     }
 }
 

@@ -102,10 +102,12 @@ header {
             background-color: #efef00; }
 
 main #textoHeroVentaCubiertas {
-  text-align: end;
+  font-size: calc(1em + .9vw);
+  text-align: center;
   text-shadow: 5px 5px 8px black, 0 0 2em blue, 0 0 0.8em blue; }
   main #textoHeroVentaCubiertas a {
-    color: #f8ff29; }
+    color: #f8ff29;
+    font-weight: 600; }
 
 main #quienesSomos {
   color: rgba(0, 0, 0, 0.7);
@@ -116,8 +118,6 @@ main #quienesSomos {
     margin-bottom: 20px; }
   main #quienesSomos .texto {
     text-align: justify; }
-  main #quienesSomos .img {
-    display: none; }
 
 main #nuestrosClientes {
   overflow-x: hidden;
@@ -324,7 +324,13 @@ footer {
       margin: 0px 50px; }
       main #contacto #formyDetalles #detallesContacto .tituloDetallesContacto {
         margin-top: 1.5rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem; }
+  main #productosServicios .cardsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
+    width: 1000px; }
+    main #productosServicios .cardsContainer .imgCard {
+      width: 220px;
+      height: 260px; } }
 
 @media screen and (min-width: 1200px) {
   main #carousel {

@@ -1,10 +1,12 @@
 
 main{
     #textoHeroVentaCubiertas{
-        text-align: end;
+        font-size: calc(1em + .9vw);
+        text-align: center;
         text-shadow: 5px 5px 8px black, 0 0 2em blue, 0 0 0.8em blue;
         a{
             color: #f8ff29;
+            font-weight: 600;
         }
     }
     #quienesSomos{
@@ -17,9 +19,6 @@ main{
         padding: 2rem;
         .texto{
             text-align: justify;
-        }
-        .img{
-            display: none;
         }
     }
     #nuestrosClientes{
