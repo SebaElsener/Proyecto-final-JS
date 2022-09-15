@@ -22,25 +22,31 @@ main{
         }
     }
     #nuestrosClientes{
-        overflow-x: hidden;
         color: hsla(200,0%,0%,.7);
         padding: 2rem;
         .animacion {
-            height: 150px;
-            position: relative;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-duration: 25s;
-            animation-name: scroll;
-        }
-        .animacion img{
-            height: 100%;
+            overflow: hidden;
+            img{
+                height: 150px;
+                position: relative;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 10s;
+                animation-name: scroll;
+            }
         }
         @keyframes scroll {
-            0% {left:100%;}
-            100% {left:-900%;}
+            0%{
+                right: -100vw;             
+            }
+            99% {
+                right: 234vw;
+            }
+            100%{
+                opacity: 0;
+            }
         }
-        .animacion:hover{
+        .animacion img:hover{
             animation-play-state: paused;
         }
     }

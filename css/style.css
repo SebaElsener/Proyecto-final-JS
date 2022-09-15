@@ -120,25 +120,26 @@ main #quienesSomos {
     text-align: justify; }
 
 main #nuestrosClientes {
-  overflow-x: hidden;
   color: rgba(0, 0, 0, 0.7);
   padding: 2rem; }
   main #nuestrosClientes .animacion {
-    height: 150px;
-    position: relative;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 25s;
-    animation-name: scroll; }
-  main #nuestrosClientes .animacion img {
-    height: 100%; }
+    overflow: hidden; }
+    main #nuestrosClientes .animacion img {
+      height: 150px;
+      position: relative;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 10s;
+      animation-name: scroll; }
 
 @keyframes scroll {
   0% {
-    left: 100%; }
+    right: -100vw; }
+  99% {
+    right: 234vw; }
   100% {
-    left: -900%; } }
-  main #nuestrosClientes .animacion:hover {
+    opacity: 0; } }
+  main #nuestrosClientes .animacion img:hover {
     animation-play-state: paused; }
 
 main #productosServicios {
@@ -290,7 +291,10 @@ main #contacto {
 
 footer {
   color: #343434;
-  background-color: #f2d600;
+  background-image: url("../img/fondofootercopia.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2rem; }
   footer .linkHome a {
     color: #343434; }

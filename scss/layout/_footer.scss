@@ -1,7 +1,10 @@
 
 footer{
     color:rgb(52, 52, 52);
-    background-color: $amarilloDunlop;
+    background-image: url('../img/fondofootercopia.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2rem;
     .linkHome{
         a{
