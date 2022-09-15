@@ -237,38 +237,42 @@ main #contacto {
     margin-bottom: 0;
     font-size: 1.3rem; }
 
-#mainCarrito .productosCarrito .producto {
-  border-bottom: 1px solid gray;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-items: center;
-  max-width: 385px;
-  padding: 30px 10px;
-  display: grid;
-  grid-template-areas: 'titulo titulo' 'img medida' 'img precio' 'img cantidad' 'img subtotal';
-  grid-template-rows: 2rem repeat(3, 2rem);
-  grid-template-columns: 1fr 1fr; }
-  #mainCarrito .productosCarrito .producto .imgProducto {
-    width: 75%; }
-    #mainCarrito .productosCarrito .producto .imgProducto img {
-      width: 100%; }
-  #mainCarrito .productosCarrito .producto .descripcionCubierta {
-    grid-area: titulo;
-    margin-bottom: 2rem; }
-  #mainCarrito .productosCarrito .producto .imgProducto {
-    grid-area: img; }
-  #mainCarrito .productosCarrito .producto .medidaCubierta {
-    grid-area: medida; }
-  #mainCarrito .productosCarrito .producto .precioCubierta {
-    grid-area: precio; }
-    #mainCarrito .productosCarrito .producto .precioCubierta .btnQuitar {
-      margin-left: 80px; }
-      #mainCarrito .productosCarrito .producto .precioCubierta .btnQuitar img {
-        width: 20%; }
-  #mainCarrito .productosCarrito .producto .cantidad {
-    grid-area: cantidad; }
-  #mainCarrito .productosCarrito .producto .subTotal {
-    grid-area: subtotal; }
+#mainCarrito .productosCarrito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #mainCarrito .productosCarrito .producto {
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    max-width: 385px;
+    padding: 30px 10px;
+    display: grid;
+    grid-template-areas: 'titulo titulo' 'img medida' 'img precio' 'img cantidad' 'img subtotal';
+    grid-template-rows: 2rem repeat(3, 2rem);
+    grid-template-columns: 1fr 1fr; }
+    #mainCarrito .productosCarrito .producto .imgProducto {
+      width: 75%; }
+      #mainCarrito .productosCarrito .producto .imgProducto img {
+        width: 100%; }
+    #mainCarrito .productosCarrito .producto .descripcionCubierta {
+      grid-area: titulo;
+      margin-bottom: 2rem; }
+    #mainCarrito .productosCarrito .producto .imgProducto {
+      grid-area: img; }
+    #mainCarrito .productosCarrito .producto .medidaCubierta {
+      grid-area: medida; }
+    #mainCarrito .productosCarrito .producto .precioCubierta {
+      grid-area: precio; }
+      #mainCarrito .productosCarrito .producto .precioCubierta .btnQuitar {
+        margin-left: 80px; }
+        #mainCarrito .productosCarrito .producto .precioCubierta .btnQuitar img {
+          width: 20%; }
+    #mainCarrito .productosCarrito .producto .cantidad {
+      grid-area: cantidad; }
+    #mainCarrito .productosCarrito .producto .subTotal {
+      grid-area: subtotal; }
 
 #mainCarrito .accionesCarrito {
   background-color: #292929; }

@@ -124,6 +124,7 @@ function finCompra(){
     domExport.accionesCarrito.style.display = 'none'
     // Mensaje DOM carrito compra finalizada
     domExport.prodCarrito.innerHTML = `<br><br><strong>¡MUCHAS GRACIAS POR SU COMPRA!</strong><br><br>DIRIJASE A LA <a href="./ventacubiertas.html">PAGINA DE VENTAS</a> PARA REALIZAR UNA NUEVA COMPRA`
+    domExport.prodCarrito.style.display = 'block'
     domExport.prodCarrito.style.textAlign = 'center'
 }
 

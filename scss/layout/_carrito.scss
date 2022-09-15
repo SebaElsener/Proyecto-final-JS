@@ -16,6 +16,9 @@
         }
     }
     .productosCarrito{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         .producto{
             .imgProducto{
                 width: 75%;
